@@ -15,15 +15,19 @@ $getCoverArts = function($field){
 	};
 };
 
-$getCoverArts2 = $concat(array_map(
-			function($coverarts){
+$getCoverArts2 = $concat(
+	array_map(
+		function($coverarts){
 				return $coverarts['coverarts'];
-			},
-			$concat(array_map(function($books){
-				return $books['books'];
-			},$booksGenres)
+		},
+			$concat(
+				array_map(
+					function($books){
+						return $books['books'];
+					},$booksGenres
+				)
 			)
-		)
+	)
 );
 
 $maxCoverArts = function($max,$current){

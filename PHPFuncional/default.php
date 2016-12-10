@@ -1,11 +1,6 @@
 <?php
-  require_once 'ubench/src/Ubench.php';
 
-    $bench = new Ubench;
-
-    $bench->start();
-
-    $name = ['henry','luiz','araujo','henrique','joao','maria','jose','judite'];
+    $name = ['henry','luiz','araujo','henrique','mel','pri','priscilla','melissa'];
 
 	/*$for = function($obj) use (&$for){
 		$count = 0;
@@ -22,9 +17,5 @@
 	for ($i = 0; $i < 100000; $i++) {
 		echo $i;
 	}
-  $bench->end();
-
-  echo 'CPU time taken '.$bench->getTime(false, '%d%s')." -- ";
-
-  echo 'memory used '.$bench->getMemoryUsage(). " -- ";
+ 
 //$for($name);
