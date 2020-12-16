@@ -1,5 +1,5 @@
-const { booksGenres } = require('../booksGenres.js');
-const { books } = require('../books.js');
+const { booksGenres } = require("../booksGenres.js");
+const { books } = require("../books.js");
 
 /*Array.prototype.concatAll = function() {
     let result = [];
@@ -26,8 +26,10 @@ const maxArt = coverArts.reduce((max ,current) =>{
 
 console.log(maxArt);*/
 
-const maxBooksPages = books.map( _maxpage => _maxpage.pages );
+const maxBooksPages = books.map((_maxpage) => _maxpage.pages);
 
-const totalPagesAllBooks  = maxBooksPages.reduce((acc,current) => acc + current);
+const totalPagesAllBooks = maxBooksPages.reduce(
+  (acc, current) => acc + current
+);
 
 console.log(totalPagesAllBooks);

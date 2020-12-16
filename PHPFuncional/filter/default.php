@@ -9,9 +9,9 @@ $booksMaxPages = [];
 	}
 }*/
 
-for ($i=0; $i < count($books) ; $i++) { 
-  if($books[$i]['pages'] > 400){
-  	array_push($booksMaxPages, $books[$i]);
+for ($i = 0; $i < count($books); $i++) {
+	if ($books[$i]['pages'] > 400) {
+		array_push($booksMaxPages, $books[$i]);
 	}
 }
 

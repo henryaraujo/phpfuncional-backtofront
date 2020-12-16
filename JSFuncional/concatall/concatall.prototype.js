@@ -1,11 +1,9 @@
-const { booksGenres } = require('../booksGenres.js');
+const { booksGenres } = require("../booksGenres.js");
 
-Array.prototype.concatAll = function() {
-    let result = [];
+Array.prototype.concatAll = function () {
+  let result = [];
 
-    this.forEach(items => 
-        result = result.concat(items)
-    );
+  this.forEach((items) => (result = result.concat(items)));
 
-    return result;
-}
+  return result;
+};
